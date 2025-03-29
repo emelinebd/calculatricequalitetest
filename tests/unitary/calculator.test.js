@@ -28,4 +28,24 @@ describe("CalculatorService", () => {
         expect(result).toBe(5);
     });
 
+    it("should correctly multiply 2 * 3", () => {
+        const result = calculator.multiply(2, 3);
+        expect(result).toBe(6);
+    });
+
+    it("should correctly multiply 5 * 0", () => {
+        const result = calculator.multiply(5, 0);
+        expect(result).toBe(0);
+    });
+
+    it("should correctly multiply -2 * 3", () => {
+        const result = calculator.multiply(-2, 3);
+        expect(result).toBe(-6);
+    });
+
+    it("should correctly multiply -2 * -3", () => {
+        const result = calculator.multiply(-2, -3);
+        expect(result).toBe(6);
+    });
+
 });
