@@ -13,4 +13,19 @@ describe("CalculatorService", () => {
         expect(result).toBe(2);
     });
 
+    it("should correctly subtract 5 - 3", () => {
+        const result = calculator.subtract(5, 3);
+        expect(result).toBe(2);
+    });
+
+    it("should correctly subtract 3 - 5", () => {
+        const result = calculator.subtract(3, 5);
+        expect(result).toBe(-2);
+    });
+
+    it("should correctly subtract 5 - 0", () => {
+        const result = calculator.subtract(5, 0);
+        expect(result).toBe(5);
+    });
+
 });
