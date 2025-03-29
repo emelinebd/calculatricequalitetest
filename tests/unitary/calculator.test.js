@@ -48,4 +48,23 @@ describe("CalculatorService", () => {
         expect(result).toBe(6);
     });
 
+    it("should correctly divide 6 / 2", () => {
+        const result = calculator.divide(6, 2);
+        expect(result).toBe(3);
+    });
+
+    it("should throw an error when dividing by 0", () => {
+        expect(() => calculator.divide(10, 0)).toThrowError("Cannot divide by zero");
+    });
+
+    it("should correctly divide -6 / 2", () => {
+        const result = calculator.divide(-6, 2);
+        expect(result).toBe(-3);
+    });
+
+    it("should correctly divide -6 / -2", () => {
+        const result = calculator.divide(-6, -2);
+        expect(result).toBe(3);
+    });
+
 });
