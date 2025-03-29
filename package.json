@@ -1,0 +1,29 @@
+{
+  "name": "calculatricequalitetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emelinebd/calculatricequalitetest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emelinebd/calculatricequalitetest/issues"
+  },
+  "homepage": "https://github.com/emelinebd/calculatricequalitetest#readme",
+  "dependencies": {
+    "vitest": "^3.0.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.14",
+    "playwright": "^1.51.1"
+  }
+}
