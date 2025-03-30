@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "vitest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:e2e": "npx playwright test"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/emelinebd/calculatricequalitetest#readme",
   "dependencies": {
+    "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },
   "devDependencies": {
